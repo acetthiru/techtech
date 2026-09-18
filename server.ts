@@ -30,7 +30,11 @@ import {
   QuestionSet,
 } from './src/types';
 
-const PORT = process.env.APP_PORT ? parseInt(process.env.APP_PORT, 10) : 3000;
+const PORT = process.env.PORT
+  ? parseInt(process.env.PORT, 10)
+  : process.env.APP_PORT
+    ? parseInt(process.env.APP_PORT, 10)
+    : 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'techbridge-symposium-secret-2026';
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'ACETTHIRU';
 
