@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Tech Bridge Rebus Challenge",
+  "description": "A real-time visual puzzle competition platform featuring live leaderboards, automated scoring, and secure multi-round technical challenges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

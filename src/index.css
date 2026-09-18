@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #FFFDF5;
+  --bg-alt: #F7F3FC;
+  --bg-card: #FFFFFF;
+  --accent-primary: #C83A87;
+  --accent-secondary: #F6D76B;
+  --accent-tech: #55C7D9;
+  --accent-fresh: #8DD8B5;
+  --text-important: #24324A;
+  --text-normal: #667085;
+  --border-color: #E8E3EF;
+}
+
+@layer base {
+  body {
+    background-color: #FFFDF5;
+    color: #24324A;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbar matching the Achariya palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8E3EF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C83A87;
+}
+
+/* Competition Arena Theme matching the Achariya palette */
+.theme-competition-arena {
+  background-color: #FFFDF5;
+  color: #24324A;
+}
+
+.theme-competition-arena ::-webkit-scrollbar-track {
+  background: #F7F3FC;
+}
+
+.theme-competition-arena ::-webkit-scrollbar-thumb {
+  background: #E8E3EF;
+  border-radius: 3px;
+}
+
+.theme-competition-arena ::-webkit-scrollbar-thumb:hover {
+  background: #C83A87;
+}
+
+/* Achariya Palette Utility Classes */
+.bg-theme-main { background-color: #FFFDF5; }
+.bg-theme-alt { background-color: #F7F3FC; }
+.bg-theme-card { background-color: #FFFFFF; }
+.text-theme-important { color: #24324A; }
+.text-theme-normal { color: #667085; }
+.border-theme { border-color: #E8E3EF; }
+
+.bg-achariya-primary { background-color: #C83A87; }
+.text-achariya-primary { color: #C83A87; }
+.border-achariya-primary { border-color: #C83A87; }
+
+.bg-achariya-gold { background-color: #F6D76B; }
+.text-achariya-gold { color: #9A7B0C; }
+.border-achariya-gold { border-color: #F6D76B; }
+
+.bg-achariya-cyan { background-color: #55C7D9; }
+.text-achariya-cyan { color: #0E7490; }
+.border-achariya-cyan { border-color: #55C7D9; }
+
+.bg-achariya-mint { background-color: #8DD8B5; }
+.text-achariya-mint { color: #065F46; }
+.border-achariya-mint { border-color: #8DD8B5; }
+
+/* Anti-Cheat & Screen Protection */
+@media print {
+  html, body {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+.protect-content {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
